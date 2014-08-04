@@ -178,3 +178,16 @@ nav-breadcrumbs:
     </div>
   </div>
 </section>
+
+<div id="discourse-comments"></div>
+
+<script type="text/javascript">
+  var discourseUrl = "http://ec2-54-87-195-123.compute-1.amazonaws.com/",
+      discourseEmbedUrl = 'http://jekit.codeforamerica.org/codeforamerica/codeforamerica.org/discourse-embed/geeks';
+
+  (function() {
+    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+      d.src = discourseUrl + 'javascripts/embed.js';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+  })();
+</script>
