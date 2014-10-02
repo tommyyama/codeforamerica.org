@@ -56,6 +56,40 @@
             margin-bottom: 0 !important;
             border-bottom: 0 !important;
         }
+        
+        
+        
+           
+        #left {
+         width:60%;
+         float:left;
+         padding-right:2.5%;
+        }
+        
+        #middle {
+         width:5%;
+         float:left;
+         padding-left:2.5%;
+         padding-right: 2.5%;
+        }
+
+        #right {
+         width:35%;
+         float:right;
+         padding-left:2.5%;
+        }
+        
+        @media only screen
+        and (max-width:720px) {
+        
+           #right, #middle, #left {
+             float:none;
+             padding-left:0;
+             padding-right:0;
+             padding-top:1em;
+             width:100%;
+           }
+        }
 
     </style>
     {% include meta-header.html %}
@@ -77,7 +111,7 @@
 
 <section>
   <div class="layout-semibreve">
-    <div class="layout-minim">
+    <div class="left">
       <h3 class="heading-contrast">Are you a<strong> designer, developer, product manager, a technologist?</strong></h3>
       <ul>
           <li>Join a hack night with a local brigade - <a href="http://www.codeforamerica.org/brigade/" target="_blank">find a Brigade near you</a> </li>
@@ -86,7 +120,10 @@
       </ul>
     </div>
 
-    <div class="layout-minim">
+    <div class="center"> &nbsp;
+    </div>
+
+    <div class="right">
       <h3 class="heading-contrast">Are you a <strong>government staff member?</strong></h3>
       <br/>
       <ul>
@@ -99,7 +136,7 @@
   
   <div class="layout-semibreve">
 
-    <div class="layout-minim">
+    <div class="left">
       <h3 class="heading-contrast">Are you <strong>part of a company?</strong></h3>
       <ul>
           <li>Find resources on <a href="/capabilities/procurement/" target="_blank">government procurement</a></li>
@@ -107,8 +144,11 @@
           <li><a href="/companies/newsletter/" target="_blank">Sign up</a> for the Companies newsletter</li>
       </ul>
     </div>
+
+    <div class="center"> &nbsp;
+    </div>
     
-    <div class="layout-minim">
+    <div class="right">
       <h3 class="heading-contrast">Want to <strong>learn more about the civic tech movement?</strong></h3>
       <p align="center">Get our <a href="http://www.codeforamerica.org/about/" target="_blank">monthly newsletter</a> </p>
     </div>
